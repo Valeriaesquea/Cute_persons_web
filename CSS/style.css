@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+:root{
+  /*colors*/
+  --wite: #FFFFFF;                   /*Bg*/
+  --dark-slate-gray: #283841;          /*Brand*/
+
+  --gray-lava: #554A4D;               /*Nav link*/
+  --dark-gray-lava: #554A4D;        /*display texts*/
+
+ --very-light-plum:#FDF0FF;          /*Btn primary label*/
+ --Plum: #BB7FC4;                    /*Btn primary bg*/
+
+ --antique-white: #FFF4E8;               /*Bg*/
+ --dark-antique-white:#95795B ;        /*Paragraph*/
+ --very-dark-antique-white: #785F44;  /*Title*/
+
+ --very-light-aqua: #E6FEFF;            /*Bg*/
+ --light-aqua:#CCFCFF;                 /*paragraph*/
+ --aqua:#3ACED6;                      /*title*/
+
+ --very-light-coral: #FFC3C3;         /*Bg*/
+ --light-coral: #FF6F6F;              /*paragrah*/
+ --dark-coral: #641E1F;               /*text - icons*/
+
+ /* Corner Radius*/
+ --corner-radius-sm: 4px;
+ --corner-radius-md: 8px;
+ --corner-radius-lg: 16px;
+
+ /* Spaces*/
+ /* global*/
+ --space-4xsm: 2px;
+ --space-3xsm: 4px;
+ --space-2xsm: 8px;
+ --space-xsm: 12px;
+ --space-sm: 16px;
+ --space-md: 20px;
+ --space-lg: 24px;
+ --space-xlg: 28px;
+ --space-2xlg: 32px;
+ --space-3xlg: 36px;
+ --space-4xlg: 40px;
+
+ /* specific*/
+ --section-padding: 116px;       /* top & botton*/
+ --header-padding: 116px;        /* top & botton*/
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--wite);
+}
+
+/*buttons*/
+.button{
+ /*contenedor*/
+ border-radius: var(--corner-radius-md, 8px);
+ background: var(--Plum);
+ padding: 16px 32px;
+ gap: 12px;
+ width: fit-content;
+ /*texto */
+ color: var(--very-light-plum);
+ font-size: 24px;
+ font-weight: 600;
+ text-decoration: none;
+}
+.button--negative{
+    /*contenedor*/
+    background: var(--very-light-plum);
+    /*texto */
+    color: var(--Plum);
+   }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header__logo {
+    max-height: 40px;
+}
+.header__svg {
+    display: block;
+}
+.nav {
+    display: flex;
+    gap: 16px;
+}
+.nav__link {
+    /*contenedor */
+padding: 8px 16px;
+border-radius: var(--corner-radius-sm, 4px);
+/*texto*/
+color: var(--dark-gray-lava);
+font-size: 24px;
+font-weight: 600;
+text-decoration: none;
+}
+/**/
+/*.main{
+}*/
+.hero{
+    padding: 116px 0px;
+}
+.hero__content{
+ display: flex;
+ gap: 90px;
+
+}
+.hero__info{
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+ 
+}
+.hero__title{
+    color: var(--dark-gray-lava);
+    font-size: 64px;
+    font-weight: 700;
+}
+.hero__paragrpah{
+color: var(--gray-lava);
+font-size: 22px;
+font-weight: 500;
+line-height: 42px; /* 190.909% */
+}
+.hero__figure{
+min-width: 375px;
+min-height: 448px;
+border-radius: var(--corner-radius-lg, 16px);
+overflow: hidden;
+}
+
+.hero__img{
+    width: 100%;
+    display: block;
+}
+
+.persons{
+    padding: 116px 0px;
+    background: var(--antique-white);
+}
+
+.persons--aqua{
+ background: var(--aqua);
+}
+
+.persons__content{
+ display: flex;
+ gap: 153px;
+}
+.persons__content--reverse{
+ flex-direction: row-reverse;
+   }
+.persons__figure{
+ max-width: 285px;
+ min-height: 285px;
+ border-radius: var(--corner-radius-lg, 116px);
+ overflow: hidden;
+}
+.persons__img{
+    width: 100%;
+}
+.persons__info{
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+
+}
+.persons__title{
+color: var(--very-dark-antique-white);
+font-size: 43px;
+font-weight: 700;
+
+}
+.persons__title--aqua{
+ color: var(--very-light-aqua);
+    }
+.persons__parapgraph{
+    color: var(--dark-antique-white);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 42px; /* 190.909% */
+}
+.persons__parapgraph--aqua{
+ color: var(--light-aqua);
+}
+
+.footer{
+    background: var(--light-coral);
+}
+.footer__content{
+display: flex;
+justify-content: space-between;
+max-width: 1024px;
+margin: 0px auto;
+padding: 16px 0px;
+}
+.footer__left{
+display: flex;
+gap: 8px;
+}
+.footer__text{
+    color: var(--dark-coral);
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer__heart{
+display: block;
+color: var(--very-light-coral);
+fill: currentColor;
+}
+.footer__right{
+display: flex;
+gap: 16px;
+}
+.footer__icon--snapchat{
+display: block;
+color: var(--dark-coral);
+fill: currentColor;
+}
+.footer__icon--tiktok{
+display: block;
+color: var(--dark-coral);
+fill: currentColor;
+}
+.footer__icon--instagram{
+display: block;
+color: var(--dark-coral);
+fill: currentColor;
+}
